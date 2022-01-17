@@ -1,4 +1,101 @@
 <!DOCTYPE html>
+<head>
+    <style>
+        html {
+            margin: none;
+        }
+        header {
+            background-color: red;
+            color:white;
+            text-align: center;
+        }
+        header h1 {
+            font-size:3rem;
+            display: block;
+            margin:auto;
+        }
+        nav {
+            background-color: orange;
+            font-size: 1.5rem;
+            padding-top:0.5em;
+            padding-bottom: 0.5em;
+            
+        }
+        nav ul {
+            margin:auto;
+            display:block;
+        }
+        nav li {
+            display: inline; 
+            /* чтобы убрать "кружочек" */
+
+        }
+        nav a { 
+            color:white;
+        }
+
+        nav li ~ li {
+            padding-left:1vw;
+            /* чтобы добавить отступ между элементами, но не первым */
+        }
+
+        main {
+            border: 10px green solid;
+            background-color: green;
+        }
+
+        article {
+            background-color: blue;
+            padding:1vw;
+            border-width: 0px;
+            color:white;
+            font-size:1.1em;
+        }
+        article {
+            margin-bottom:10px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: blueviolet;
+            font-size: 3rem;
+            color:white;
+        }
+    </style>
+</head>
 <html lang="ru">
-    <!-- Ваше решение -->
+    <header>
+        <h1>Header</h1>
+        <nav>
+            <ul>
+                <li><a href="#one">Navigation 1</a></li>
+                <li><a href="#two">Navigation 2</a></li>
+                <li><a href="#three">Navigation 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>Article 1</h2>
+            <ul>
+                <li>Оригинальная трилогия</li>
+                <li>Трилогия приквелов</li>
+                <li>Трилогия сиквелов</li>
+            </ul>
+        </article>
+        <article>
+            <h2>Article 2</h2>
+            <ol>
+                <li>Эпизод IV &mdash; Новая надежда</li>
+                <li>Эпизон V &mdash; Империя наносит ответный удар</li>
+                <li>Эпизод VI &mdash; Возвращение джедая</li>
+            </ol>
+        </article>
+    </main>
+
+    <footer>Footer</footer>
+
 </html>
+
+
