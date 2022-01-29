@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <!-- Страница с кнопкой -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./button.css">
-    </head>
-    <body>
 
-    </body>
+<head>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./button.css">
+    <style>
+        .buttoncontainer button {
+            margin-bottom: 10px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Buttons</h1>
+    <div class="buttoncontainer">
+        <div>
+            <button class="button button--primary"><span class="button__title">Primary</span></button>
+            <button class="button button--primary hover"><span class="button__title">Primary</span></button>
+            <button class="button button--primary" disabled><span class="button__title">Primary
+                    disabled</span></button>
+        </div>
+        <div>
+            <button class="button button--secondary"><span class="button__title">Secondary</span></button>
+            <button class="button button--secondary hover"><span class="button__title">Secondary</span></button>            
+            <button class="button button--secondary" disabled><span class="button__title">Secondary
+                    disabled</span></button>
+        </div>
+        <div>
+            <button class="button button--alternate"><span class="button__title">Alternate</span></button>
+            <button class="button button--alternate hover"><span class="button__title">Alternate</span></button>
+            <button class="button button--alternate" disabled><span class="button__title">Alternate
+                    disabled</span></button>
+        </div>
+    </div>
+</body>
+
 </html>
