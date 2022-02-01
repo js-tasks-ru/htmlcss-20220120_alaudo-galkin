@@ -1,5 +1,8 @@
 @import "normalize.css";
 @import '../fonts/fonts.css';
+@import "/components/header/header.css";
+@import "/components/footer/footer.css";
+@import "/components/container/container.css";
 
 :root {
     --white: #ffffff;
@@ -34,6 +37,25 @@
 
 }
 
-* {
+body {
     font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+main {
+    height:500px;
+    background:#F9FAFC;
+    flex-grow: 1;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 500;
 }
