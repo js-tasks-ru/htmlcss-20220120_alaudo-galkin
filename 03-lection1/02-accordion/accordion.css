@@ -1,28 +1,31 @@
 /* Стилизация аккордеона */
 
 .accordion {
-    display: block;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.accordion__item {
     margin: 8px;
     border: 1px solid #ACB5BD;
     box-sizing: border-box;
     border-radius: 8px;
     max-width: 730px;
-    font-family: Inter, sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 24px;
+    padding: 24px 32px;
 }
 
 .accordion__title {
-    margin: 24px 32px 24px;
+
     cursor: pointer;
-    display: block;
     position:relative;
 }
 
 .accordion__text {
-    margin: -8px 50px 32px 32px;
+    margin:auto;
+    padding-top:16px;
 }
 
 .accordion__title::after {
@@ -34,22 +37,22 @@
     height: 8px;  
     content: "";
     position: absolute;
-    transition: transform 1s;
+    transition: transform 0.5s;
     background-repeat: no-repeat;
 }
 
-details[open] > .accordion__title::after {
+.accordion__item[open] > .accordion__title::after {
     transform: rotateZ(180deg);
 }
 
 
 /* Убираем стандартный маркер Chrome */
-details.accordion summary::-webkit-details-marker {
+.accordion__item > summary::-webkit-details-marker {
     display: none;
 }
 
   /* Убираем стандартный маркер Firefox */
-details.accordion > summary {
+.accordion__item > summary {
     list-style: none;
 }
 
