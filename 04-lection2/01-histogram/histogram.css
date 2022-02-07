@@ -44,10 +44,9 @@
 
 .histogram__column {    
     background-color: var(--blue);
-    margin-right:1px;
     flex: 1 0 9px;
 }
 
-.histogram__chart:last-child {
-    margin-right:none;
+.histogram__column + .histogram__column {
+    margin-left:1px;
 }
