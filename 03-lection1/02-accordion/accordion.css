@@ -51,12 +51,12 @@
 
 
 /* Убираем стандартный маркер Chrome */
-.accordion__item > summary::-webkit-details-marker {
+.accordion__item > .accordion__title::-webkit-details-marker {
     display: none;
 }
 
   /* Убираем стандартный маркер Firefox */
-.accordion__item > summary {
+.accordion__item > .accordion__title {
     list-style: none;
 }
 
