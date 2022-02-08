@@ -34,10 +34,10 @@
 .tooltip__text::after {
     content: "";
     position:absolute;
-    top:100%;
+    top:calc(100% - 2px);
     left:50%;
-    border: 14px solid transparent;
-    border-top: 8px solid var(--blue);  
+    border: 16px solid transparent;
+    border-top: 9px solid var(--blue);  
     transform: translateX(-50%);  
 }
 
