@@ -3,6 +3,7 @@
 @import "/components/header/header.css";
 @import "/components/footer/footer.css";
 @import "/components/container/container.css";
+@import "/03-lection1/01-button/button.css";
 
 :root {
     --white: #ffffff;
@@ -19,6 +20,7 @@
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
     --grey-4: #495057;
+    --grey-5: #C4C4C4;
 
     --error: var(--red);
     --success: var(--blue);
