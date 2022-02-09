@@ -3,8 +3,25 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./srcset.css">
-    </head>
-    <body>
+        <style>
 
+            .page {
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body class="page">
+        <div class="square-block">
+            <img src="public/forest_400.jpg" alt="Forest image" srcset="public/forest_400.jpg 1x, public/forest_768.jpg 2x" class="square-block__image">
+
+        </div>
+
+        <div class="square-block">
+           <picture class="square-block__image">
+               <source media="(min-device-pixel-ratio: 2)" srcset="public/forest_768.jpg" />
+               <source media="(max-device-pixel-ratio: 1.5)" srcset="public/forest_400.jpg" />
+               <img src="public/forest_400.jpg" alt="Forest image" class="square-block__image">
+           </picture> 
+        </div>
     </body>
 </html>
