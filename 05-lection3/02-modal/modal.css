@@ -4,17 +4,15 @@
     font-family: Inter, sans-serif;
     font-style: normal;  
     position:fixed;
-    opacity:0.5;
     top:0;
     left:0;
     right:0;
     bottom:0;    
-    background:var(--grey-5);
+    background: rgba(196, 196, 196, 0.5);
     color:var(--dark-blue);
 }
 
 .modal__window {
-    opacity:1;
     position:absolute;
     padding: 30px 40px 33px;
     left:50%;
