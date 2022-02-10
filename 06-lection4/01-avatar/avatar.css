@@ -1,0 +1,21 @@
+.avatar {
+    padding: 1.5em;
+}
+
+.avatar__image {
+    border-radius: 50%;
+    width: 116px;
+    height: 116px;
+    object-fit: cover;
+}
+
+.avatar__background {
+    border-radius: 50%;
+    background-image: url("../../assets/images/avatar.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 116px;
+    height: 116px;
+    object-fit: cover;
+}
